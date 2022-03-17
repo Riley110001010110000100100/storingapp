@@ -5,7 +5,6 @@ $attractie = $_POST['attractie'];
 $capaciteit = $_POST['capaciteit']; 
 $melder = $_POST['melder'];
 
-echo $attractie . " / " . $capaciteit . " / " . $melder;
 
 //1. Verbinding
 require_once 'conn.php';
@@ -17,7 +16,10 @@ $query =   "INSERT INTO meldingen (attractie, capaciteit, melder)
 $statement = $conn->prepare($query);
 //4. Execute
 $statement->execute([
-    ":attractie" => $attactie,
+    ":attractie" => $attractie,
     ":capaciteit" => $capaciteit,
     ":melder" => $melder
 ]);
+
+
+header("Location:../meldingen/index.php?msg=Meldingopgeslagen");
