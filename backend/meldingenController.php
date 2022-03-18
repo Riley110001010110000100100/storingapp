@@ -18,13 +18,13 @@ $overig = $_POST['overig'];
 $attractie=$_POST['attractie'];
 if(empty($attractie))
 {
-    $errors[]="Vuldeattractie-naamin.";
+    $errors[]="Vul de attractie-naam in.";
 }
 
 $capaciteit=$_POST['capaciteit'];
 if(!is_numeric($capaciteit))
 {
-    $errors[]="Vulvoorcapaciteiteengeldiggetalin.";
+    $errors[]="Vul voor capaciteit een geldig getal in.";
 }
 
 if(isset($errors))
