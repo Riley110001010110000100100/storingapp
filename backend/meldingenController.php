@@ -15,6 +15,24 @@ else
 $melder = $_POST['melder'];
 $overig = $_POST['overig'];
 
+$attractie=$_POST['attractie'];
+if(empty($attractie))
+{
+    $errors[]="Vuldeattractie-naamin.";
+}
+
+$capaciteit=$_POST['capaciteit'];
+if(!is_numeric($capaciteit))
+{
+    $errors[]="Vulvoorcapaciteiteengeldiggetalin.";
+}
+
+if(isset($errors))
+{
+    var_dump($errors);
+    die();
+}
+
 
 //1. Verbinding
 require_once 'conn.php';
