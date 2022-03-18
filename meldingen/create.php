@@ -23,13 +23,13 @@
                 <label for="type">Type</label>
                 <select name="type" id="type">
                     <option value=""> - Kies een type - </option>
-                    <option value="achtbaan"> - achtbaan - </option>
-                    <option value="draaiend"> - draaiende attractie - </option>
-                    <option value="kinder"> - kinder attractie - </option>
-                    <option value="horeca"> - horeca - </option>
-                    <option value="show"> - show - </option>
-                    <option value="water"> - water attractie - </option>
-                    <option value="overig"> - overige activiteiten - </option>
+                    <option value="achtbaan"> achtbaan </option>
+                    <option value="draaiend"> draaiende attractie </option>
+                    <option value="kinder"> kinder attractie </option>
+                    <option value="horeca"> horeca </option>
+                    <option value="show"> show </option>
+                    <option value="water"> water attractie </option>
+                    <option value="overig"> overige activiteiten </option>
                 </select>
             </div>
             <div class="form-group">
